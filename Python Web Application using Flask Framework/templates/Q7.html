@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+{% block content%}
+<form method="POST">
+<div class="jumbotron">
+  <h2> Q7: I can rely on the ARA to do its best every time i take its advice </h2>
+  <form8 method="POST">
+      {{ form8.hidden_tag() }}
+      {{ form8.q7.label }} {{ form8.q7() }}
+  </form8>
+  <br>
+  <br>
+  <br>
+  <p style="text-align:center;">{{ form8.submit8() }}</p>
+</div>
+</form>
+{% endblock %}

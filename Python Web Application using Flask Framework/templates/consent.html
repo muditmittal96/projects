@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <h1 style="text-align:center"><b>PARTICIPANT INFORMATION SHEET </b></h1>
+    <h2 style="text-align:center">Managing Decision Performance under Uncertainty</h2>
+  <div class="jumbotron">
+    </head>
+    <body>
+      <form method="POST">
+        <br>
+        <b>WHO IS DOING THE RESEARCH? </b>
+        <br>
+        My name is Jianlong Zhou and I am an academic at UTS.  (Mudit Mittal) is a project student. I supervise him to conduct this research project.
+        <br><br>
+        <b>WHAT IS THIS RESEARCH ABOUT? </b>
+        <br>
+        This research is to investigate the decision performance based on machine learning (ML) with the use of different visualizations for machine learning results. The ultimate goal is to find the best visualization for the presentation of machine learning results to promote user trust.
+        <br><br>
+        <b>WHY HAVE I BEEN ASKED? </b>
+        <br>
+        You have been invited to participate in this study because you have suitable expertise in machine learning or decision making.
+        <br><br>
+        <b>IF I SAY YES, WHAT WILL IT INVOLVE? </b>
+        <br>
+        If you decide to participate, I will invite you to participate in a series of decision making tasks. In each task, a visualization is firstly presented to you. Then you are asked to make a decision based on the visualization by clicking a button on the screen. Questionnaires on your decision and visualization are then asked. Your decisions and questionnaires are recorded. It will take approximately 45 minutes to complete all tasks. After all tasks you would be asked to input your basic information such as gender and age range to finish the study. All information is anonymised and no personal details specific to you are revealed.
+        <br><br>
+        <b>ARE THERE ANY RISKS/INCONVENIENCE? </b>
+        <br>
+        There is no any risk in this study.
+        <br><br>
+        <b>DO I HAVE TO SAY YES? </b>
+        <br>
+        Participation in this study is voluntary. It is completely up to you whether or not you decide to take part in.
+        <br><br>
+        <b>WHAT WILL HAPPEN IF I SAY NO? </b>
+        <br>
+        If you decide not to participate, it will not affect your relationship with the researchers or the University of Technology Sydney. If you wish to withdraw from the study once it has started, you can do so at any time without having to give a reason, by contacting Jianlong Zhou, email: Jianlong.zhou@uts.edu.au, Phone: 0406 199 739.
+        <br>
+        If you withdraw from the study, your samples will be destroyed.
+        <br><br>
+        <b>CONFIDENTIALITY </b>
+        <br>
+        By signing the consent form you consent to the research team collecting and using personal information about you for the research project. All this information will be treated confidentially. All data will be stored in a desktop computer with password access in the UTS lab of CB02.12.129. Only the investigator can access the computer. Your information will only be used for the purpose of this research project and it will only be disclosed with your permission, except as required by law.
+        <br>
+        We would like to store your information for future use in research projects that are an extension of this research project. In all instances your information will be treated confidentially.
+        <br>
+        We plan to publish the results in conferences/journals on machine learning/human-computer interaction. Only the statistical results will be published to reveal the overall trend of responses. In any publications, information will be provided in such a way that you cannot be identified.
+        <br><br>
+        <b>WHAT IF I HAVE CONCERNS OR A COMPLAINT? </b>
+        <br>
+        If you have concerns about the research that you think I or my supervisor can help you with, please feel free to contact me on Jianlong.zhou@uts.edu.au.
+        <br>
+        You will be given a copy of this form to keep.
+        <br>
+        NOTE:
+        This study has been approved by the University of Technology Sydney Human Research Ethics Committee [UTS HREC].  If you have any concerns or complaints about any aspect of the conduct of this research, please contact the Ethics Secretariat on ph.: +61 2 9514 2478 or email: Research.Ethics@uts.edu.au], and quote the UTS HREC reference number.  Any matter raised will be treated confidentially, investigated and you will be informed of the outcome.
+        <br><br>
+
+
+        <b>CONSENT FORM </b>
+        <br><br>
+        <b>Managing Decision Performance Under Uncertainty (ETH19-4227) </b>
+        <br>
+
+        I {{ form10.participant_name() }} agree to participate in the research project Managing Decision Performance under Uncertainty (ETH19-4227) being conducted by Jianlong Zhou and Mudit Mittal, with online applications and contact telephone 0406199 739.
+        <br>
+        I have read the Participant Information Sheet or someone has read it to me in a language that I understand.
+        <br>
+        I understand the purposes, procedures and risks of the research as described in the Participant Information Sheet.
+        <br>
+        I have had an opportunity to ask questions and I am satisfied with the answers I have received.
+        <br>
+        I freely agree to participate in this research project as described and understand that I am free to withdraw at any time without affecting my relationship with the researchers or the University of Technology Sydney.
+        <br>
+        I understand that I will be given a signed copy of this document to keep.
+        <br>
+
+        I agree that the research data gathered from this project may be published in a form that:
+        <br>
+        Does not identify me in any way
+        <br>
+        May be used for future research purposes
+        <br>
+        I am aware that I can contact Jianlong Zhou if I have any concerns about the research.
+        <br><br>
+
+        {{ form10.response() }}
+
+        {{        form10.participant_name()       }}<br>
+        Participant's Name and Signature
+
+        <br><br>
+        {{        form10.researcher_name()       }}<br>
+        Researcher's Name and Signature
+        <br>
+
+          {{ form10.hidden_tag() }}
+          <p style="text-align:center;">{{ form10.submit10() }}</p>
+
+      </form>
+    </body>
+  </div>
+{% endblock %}
+</html>

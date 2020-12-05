@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbotron">
+    <h1>    Welcome to the Perception of Fairness survey analysis!</h1>
+  </div>
+  <div class="jumbotron">
+    <form method="POST">
+      {{ form.csrf_token }}
+      {{ form.hidden_tag() }}
+      {{ form.age.label }} {{ form.age() }}
+      {{ form.gender.label }} {{ form.gender() }}
+      {{ form.education.label }} {{ form.education() }}
+      <p style="text-align:center;">{{ form.submit1() }}</p>
+    </form>
+  </div>
+{% endblock %}

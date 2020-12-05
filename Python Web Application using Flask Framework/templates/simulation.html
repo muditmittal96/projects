@@ -1,0 +1,44 @@
+{%extends "base.html"%}
+{% block content%}
+<form method="POST">
+  <div class="jumbotron">
+    <h2> This diagram shows the shortlisting outcome of applicants by the Automatic Recruitment Assistant (ARA). After reading this diagram, you will answer questions on it. </h2><br>
+  </div>
+    <head>
+      <p style="text-align:center;">
+        <meta charset="utf-8">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['bar']});
+          google.charts.setOnLoadCallback(drawChart);
+
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Gender', 'Total Applicants', 'Total Applicants Shortlisted'],
+              ['Male', {{applicants[0]}}, {{applicants[1]}}],
+              ['Female', {{applicants[2]}}, {{applicants[3]}}],
+            ]);
+
+            var options = {
+              chart: {
+                title: '',
+              }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+          }
+        </script>
+      </p>
+    </head>
+    <body>
+      <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+    </body>
+    <br>
+    <br>
+    <br>
+    <p style="text-align:center;">{{ form9.submit9() }}</p>
+  </div>
+</form>
+{% endblock %}

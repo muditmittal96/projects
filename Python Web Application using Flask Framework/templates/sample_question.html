@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+{% block content%}
+<form method="POST">
+<div class="jumbotron">
+  <h1>Sample Question</h1>
+  <h2> Q1: Overall, female and male applicants are treated fairly by ARA </h2>
+  <form2 method="POST">
+      {{ form12.hidden_tag() }}
+      {{ form12.q1.label }} {{ form12.q1() }}
+  </form2>
+  <br>
+  <br>
+  <br>
+  <p style="text-align:center;">{{ form12.submit12() }}</p>
+</div>
+</form>
+{% endblock %}
