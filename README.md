@@ -1,4 +1,4 @@
-# projects
+# Projects
 This repository showcases various projects i have worked on using python language. The repository includes projects based on following topics:
 
 * Data cleaning
@@ -9,5 +9,5 @@ This repository showcases various projects i have worked on using python languag
 * Heroku cloud development
 * Connecting python backend with MySQL database
 * Making ETL pipelines using Luigi library
-* Connecting Luigi pipeline with PostgreSQL
-* Connecting Luigi pipeline with MySQL
+* Connecting Luigi pipeline with PostgreSQL database
+* Connecting Luigi pipeline with MySQL database
