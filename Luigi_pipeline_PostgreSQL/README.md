@@ -1,3 +1,5 @@
+# Luigi Assignment
+
 This program was designed in response to a data engineering internship coding challenge. The task was to build a successful pipeline using the Python Module Luigi and SQLAlchemy to get data from a excel spreadsheet and store it in a SQLite database.
 
 The program follows a logical data pipeline workflow:
